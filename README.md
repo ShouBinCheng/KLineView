@@ -1,4 +1,4 @@
-# KLineView
+# KLineView（未完成...）
 
 [![CI Status](https://img.shields.io/travis/iCoobin/KLineView.svg?style=flat)](https://travis-ci.org/iCoobin/KLineView)
 [![Version](https://img.shields.io/cocoapods/v/KLineView.svg?style=flat)](https://cocoapods.org/pods/KLineView)
