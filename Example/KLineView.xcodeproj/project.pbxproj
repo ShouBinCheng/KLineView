@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14322563222917E000D07AA5 /* timeLineForDay.json in Resources */ = {isa = PBXBuildFile; fileRef = 1432255B222917E000D07AA5 /* timeLineForDay.json */; };
+		14322564222917E000D07AA5 /* kLineForMonth.json in Resources */ = {isa = PBXBuildFile; fileRef = 1432255C222917E000D07AA5 /* kLineForMonth.json */; };
+		14322565222917E000D07AA5 /* kLineForDay.json in Resources */ = {isa = PBXBuildFile; fileRef = 1432255D222917E000D07AA5 /* kLineForDay.json */; };
+		14322566222917E000D07AA5 /* kLineForWeek.json in Resources */ = {isa = PBXBuildFile; fileRef = 1432255E222917E000D07AA5 /* kLineForWeek.json */; };
+		14322567222917E000D07AA5 /* timeLineForFiveday.json in Resources */ = {isa = PBXBuildFile; fileRef = 1432255F222917E000D07AA5 /* timeLineForFiveday.json */; };
+		14322568222917E000D07AA5 /* fiveTrade.json in Resources */ = {isa = PBXBuildFile; fileRef = 14322560222917E000D07AA5 /* fiveTrade.json */; };
+		14322569222917E000D07AA5 /* fiveTrade.temp_caseinsensitive_rename.json in Resources */ = {isa = PBXBuildFile; fileRef = 14322561222917E000D07AA5 /* fiveTrade.temp_caseinsensitive_rename.json */; };
+		1432256A222917E000D07AA5 /* SZ300033.json in Resources */ = {isa = PBXBuildFile; fileRef = 14322562222917E000D07AA5 /* SZ300033.json */; };
+		1432256C222917F000D07AA5 /* UtilSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432256B222917F000D07AA5 /* UtilSampleData.swift */; };
+		143225722229290100D07AA5 /* KLineSampleDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143225712229290000D07AA5 /* KLineSampleDataResponse.swift */; };
+		143225742229293200D07AA5 /* KLineModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143225732229293200D07AA5 /* KLineModel2.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,9 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14C10D4B64AE33C529DF81B3 /* KLineView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KLineView.podspec; path = ../KLineView.podspec; sourceTree = "<group>"; };
+		1432255B222917E000D07AA5 /* timeLineForDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeLineForDay.json; sourceTree = "<group>"; };
+		1432255C222917E000D07AA5 /* kLineForMonth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kLineForMonth.json; sourceTree = "<group>"; };
+		1432255D222917E000D07AA5 /* kLineForDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kLineForDay.json; sourceTree = "<group>"; };
+		1432255E222917E000D07AA5 /* kLineForWeek.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kLineForWeek.json; sourceTree = "<group>"; };
+		1432255F222917E000D07AA5 /* timeLineForFiveday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeLineForFiveday.json; sourceTree = "<group>"; };
+		14322560222917E000D07AA5 /* fiveTrade.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fiveTrade.json; sourceTree = "<group>"; };
+		14322561222917E000D07AA5 /* fiveTrade.temp_caseinsensitive_rename.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fiveTrade.temp_caseinsensitive_rename.json; sourceTree = "<group>"; };
+		14322562222917E000D07AA5 /* SZ300033.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SZ300033.json; sourceTree = "<group>"; };
+		1432256B222917F000D07AA5 /* UtilSampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilSampleData.swift; sourceTree = "<group>"; };
+		143225712229290000D07AA5 /* KLineSampleDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineSampleDataResponse.swift; sourceTree = "<group>"; };
+		143225732229293200D07AA5 /* KLineModel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineModel2.swift; sourceTree = "<group>"; };
+		14C10D4B64AE33C529DF81B3 /* KLineView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLineView.podspec; path = ../KLineView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1BE04555A4159A0BAE2629E1 /* Pods-KLineView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLineView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLineView_Example/Pods-KLineView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		31171CD72FC3ED1C0D2E2C72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		31171CD72FC3ED1C0D2E2C72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		322D7C58E2D9CCD2BEAB7211 /* Pods-KLineView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLineView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLineView_Tests/Pods-KLineView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C587F795451998C72654F4B /* Pods-KLineView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLineView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLineView_Tests/Pods-KLineView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5414A88E95E394B46A938BA9 /* Pods_KLineView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLineView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +66,7 @@
 		607FACE51AFB9204008FA782 /* KLineView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLineView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		636B339497FE51CA3A9D10AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		636B339497FE51CA3A9D10AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		75E97F3833FA47D28EB22FBC /* Pods_KLineView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLineView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		951AACA6AB4CFC3248E44869 /* Pods-KLineView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLineView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLineView_Example/Pods-KLineView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1432255A222917E000D07AA5 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				1432255B222917E000D07AA5 /* timeLineForDay.json */,
+				1432255C222917E000D07AA5 /* kLineForMonth.json */,
+				1432255D222917E000D07AA5 /* kLineForDay.json */,
+				1432255E222917E000D07AA5 /* kLineForWeek.json */,
+				1432255F222917E000D07AA5 /* timeLineForFiveday.json */,
+				14322560222917E000D07AA5 /* fiveTrade.json */,
+				14322561222917E000D07AA5 /* fiveTrade.temp_caseinsensitive_rename.json */,
+				14322562222917E000D07AA5 /* SZ300033.json */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +130,10 @@
 		607FACD21AFB9204008FA782 /* Example for KLineView */ = {
 			isa = PBXGroup;
 			children = (
+				143225732229293200D07AA5 /* KLineModel2.swift */,
+				143225712229290000D07AA5 /* KLineSampleDataResponse.swift */,
+				1432256B222917F000D07AA5 /* UtilSampleData.swift */,
+				1432255A222917E000D07AA5 /* SampleData */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -245,9 +286,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14322565222917E000D07AA5 /* kLineForDay.json in Resources */,
+				1432256A222917E000D07AA5 /* SZ300033.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				14322564222917E000D07AA5 /* kLineForMonth.json in Resources */,
+				14322566222917E000D07AA5 /* kLineForWeek.json in Resources */,
+				14322567222917E000D07AA5 /* timeLineForFiveday.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				14322563222917E000D07AA5 /* timeLineForDay.json in Resources */,
+				14322568222917E000D07AA5 /* fiveTrade.json in Resources */,
+				14322569222917E000D07AA5 /* fiveTrade.temp_caseinsensitive_rename.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +335,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KLineView_Example/Pods-KLineView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/KLineView/KLineView.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLineView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,6 +393,9 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				143225722229290100D07AA5 /* KLineSampleDataResponse.swift in Sources */,
+				143225742229293200D07AA5 /* KLineModel2.swift in Sources */,
+				1432256C222917F000D07AA5 /* UtilSampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

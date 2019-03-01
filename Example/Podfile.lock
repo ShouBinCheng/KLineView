@@ -1,0 +1,75 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Charts (3.2.3):
+    - Charts/Core (= 3.2.3)
+  - Charts/Core (3.2.3)
+  - DGActivityIndicatorView (2.1.1)
+  - KLineView (0.1.0):
+    - Charts
+    - DGActivityIndicatorView
+    - SnapKit
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - ObjectMapper (3.4.2)
+  - Result (4.1.0)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts (from `https://github.com/iCoobin/Charts.git`, tag `3.2.3-myself`)
+  - DGActivityIndicatorView
+  - KLineView (from `../`)
+  - Moya
+  - ObjectMapper
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DGActivityIndicatorView
+    - Moya
+    - ObjectMapper
+    - Result
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Charts:
+    :git: https://github.com/iCoobin/Charts.git
+    :tag: 3.2.3-myself
+  KLineView:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  Charts:
+    :git: https://github.com/iCoobin/Charts.git
+    :tag: 3.2.3-myself
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Charts: a3ad31cf8f8a714644a25e5b38260091cbcc1ce2
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  KLineView: 982ba71ae7bc7df7169c14fdba2aaa3ee6083872
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 4828f1bb30f990746e4009720884a35701878cda
+
+COCOAPODS: 1.5.3

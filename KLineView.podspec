@@ -29,8 +29,10 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.2'
 
   s.source_files = 'KLineView/Classes/**/*'
+  #s.public_header_files = 'KLineView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'KLineView' => ['KLineView/Assets/*.png']
@@ -39,4 +41,15 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.preserve_paths = "Modules"
+  s.pod_target_xcconfig = {
+      "SWIFT_INCLUDE_PATHS" => "$(SRCROOT)/TokenCore/Modules",
+      "OTHER_LDFLAGS" => "-lObjC",
+      "SWIFT_OPTIMIZATION_LEVEL" => "-Owholemodule"
+  }
+  
+  s.dependency 'Charts'
+  s.dependency 'DGActivityIndicatorView'
+  s.dependency 'SnapKit'
 end

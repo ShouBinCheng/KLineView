@@ -1,5 +1,5 @@
 import XCTest
-import KLineView
+//import KLineView
 
 class Tests: XCTestCase {
     
