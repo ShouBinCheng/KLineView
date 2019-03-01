@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KLineView_Example' do
+  pod 'KLineView', :path => '../'
+
+  target 'KLineView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
