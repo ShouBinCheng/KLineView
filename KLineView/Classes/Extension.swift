@@ -110,3 +110,159 @@ public extension UITableView {
         return tableView
     }
 }
+
+public extension UIImage {
+    
+    public enum Direction {
+        case TopBottom
+        case LeftRight
+        case LeftTopRightBottom
+        case LeftBottomRightTop
+    }
+    
+    //创建纯色图片
+    public static func creatWithColor(_ color:UIColor) -> UIImage {
+        let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context!.setFillColor(color.cgColor)
+        context!.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+    
+    //创建过度色图片
+    public static func creatWith(size:CGSize,startColor:UIColor, endColor:UIColor, direction:Direction) -> UIImage{
+        
+        UIGraphicsBeginImageContextWithOptions(size, true, 1)
+        let context = UIGraphicsGetCurrentContext()
+        context!.saveGState()
+        let colorSpace = startColor.cgColor.colorSpace
+        let cfArray = [startColor.cgColor,endColor.cgColor]
+        let gradient = CGGradient(colorsSpace: colorSpace,colors: cfArray as CFArray,locations: nil)
+        
+        var startPoint:CGPoint!
+        var endPoint:CGPoint!
+        switch direction {
+        case .LeftRight:
+            startPoint = CGPoint(x: 0, y: size.height/2)
+            endPoint = CGPoint(x: size.width, y: size.height/2)
+        case .TopBottom:
+            startPoint = CGPoint(x: size.width/2, y: 0)
+            endPoint = CGPoint(x: size.width/2, y: size.height)
+        case .LeftTopRightBottom:
+            startPoint = CGPoint(x: 0, y: 0)
+            endPoint = CGPoint(x: size.width, y: size.height)
+        case .LeftBottomRightTop:
+            startPoint = CGPoint(x: 0, y: size.height)
+            endPoint = CGPoint(x: size.width, y: 0)
+        }
+        context!.drawLinearGradient(gradient!,start: startPoint,end: endPoint,options: [.drawsBeforeStartLocation,.drawsAfterEndLocation])
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        return image!
+    }
+    
+    //颜色渲染图片
+    public func withColor(_ tintColor: UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        
+        let context = UIGraphicsGetCurrentContext()
+        context?.translateBy(x: 0, y: self.size.height)
+        context?.scaleBy(x: 1.0, y: -1.0)
+        context?.setBlendMode(CGBlendMode.normal)
+        
+        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height) as CGRect
+        context?.clip(to: rect, mask: self.cgImage!)
+        tintColor.setFill()
+        context?.fill(rect)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()! as UIImage
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
+    
+    //高斯模糊(模糊半径)
+    public func gaussianfilter(radius: CGFloat) -> UIImage {
+        //获取原始图片
+        let originalImage = self
+        let inputImage =  CIImage(image: originalImage)
+        //使用高斯模糊滤镜
+        let filter = CIFilter(name: "CIGaussianBlur")!
+        filter.setValue(inputImage, forKey:kCIInputImageKey)
+        //设置模糊半径值（越大越模糊）
+        filter.setValue(radius, forKey: kCIInputRadiusKey)
+        let outputCIImage = filter.outputImage!
+        let rect = CGRect(origin: CGPoint.zero, size: originalImage.size)
+        let context = CIContext(options: nil)
+        let cgImage = context.createCGImage(outputCIImage, from: rect)
+        return UIImage(cgImage: cgImage!)
+    }
+    
+    
+    /// 截屏
+    ///
+    /// - Parameters:
+    ///   - view: 要截屏的view
+    /// - Returns: 一个UIImage
+    public static func cutFullImageWithView(scrollView:UIScrollView) -> UIImage
+    {
+        // 记录当前的scrollView的偏移量和坐标
+        let currentContentOffSet:CGPoint = scrollView.contentOffset
+        let currentFrame:CGRect = scrollView.frame;
+        
+        // 设置为zero和相应的坐标
+        scrollView.contentOffset = CGPoint.zero
+        scrollView.frame = CGRect.init(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.frame.size.height)
+        
+        // 参数①：截屏区域  参数②：是否透明  参数③：清晰度
+        UIGraphicsBeginImageContextWithOptions(scrollView.contentSize, true, UIScreen.main.scale)
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        // 重新设置原来的参数
+        scrollView.contentOffset = currentContentOffSet
+        scrollView.frame = currentFrame
+        
+        UIGraphicsEndImageContext();
+        
+        return image;
+    }
+    
+    /// 截屏
+    ///
+    /// - Parameters:
+    ///   - view: 要截屏的view
+    /// - Returns: 一个UIImage
+    public static func cutImageWithView(view:UIView) -> UIImage
+    {
+        // 参数①：截屏区域  参数②：是否透明  参数③：清晰度
+        UIGraphicsBeginImageContextWithOptions(view.frame.size, true, UIScreen.main.scale)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext();
+        return image;
+    }
+    
+    public func resizeWithWidth(_ width: CGFloat) -> UIImage {
+        let aspectSize = CGSize (width: width, height: aspectHeightForWidth(width))
+        
+        UIGraphicsBeginImageContext(aspectSize)
+        self.draw(in: CGRect(origin: CGPoint.zero, size: aspectSize))
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return img!
+    }
+    
+    /// EZSE:
+    public func aspectHeightForWidth(_ width: CGFloat) -> CGFloat {
+        return (width * self.size.height) / self.size.width
+    }
+    
+    /// EZSE:
+    public func aspectWidthForHeight(_ height: CGFloat) -> CGFloat {
+        return (height * self.size.width) / self.size.height
+    }
+}

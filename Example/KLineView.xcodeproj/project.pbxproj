@@ -18,6 +18,13 @@
 		1432256C222917F000D07AA5 /* UtilSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432256B222917F000D07AA5 /* UtilSampleData.swift */; };
 		143225722229290100D07AA5 /* KLineSampleDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143225712229290000D07AA5 /* KLineSampleDataResponse.swift */; };
 		143225742229293200D07AA5 /* KLineModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143225732229293200D07AA5 /* KLineModel2.swift */; };
+		14322578222CFAC900D07AA5 /* KLineChartCheckedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14322577222CFAC900D07AA5 /* KLineChartCheckedView.swift */; };
+		1432257A222CFB1A00D07AA5 /* KLinePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14322579222CFB1A00D07AA5 /* KLinePeriod.swift */; };
+		1432257C222CFFE100D07AA5 /* KLineFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432257B222CFFE100D07AA5 /* KLineFullScreenViewController.swift */; };
+		1432257E222D02C000D07AA5 /* KLineFullScreenCheckedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432257D222D02C000D07AA5 /* KLineFullScreenCheckedView.swift */; };
+		14322580222D036C00D07AA5 /* KLineFullScreenIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432257F222D036C00D07AA5 /* KLineFullScreenIndexView.swift */; };
+		14322582222D03C100D07AA5 /* KLineFullScreenTopInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14322581222D03C100D07AA5 /* KLineFullScreenTopInfoView.swift */; };
+		14322584222D044E00D07AA5 /* KLineFullScreenBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14322583222D044E00D07AA5 /* KLineFullScreenBottomView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -50,6 +57,13 @@
 		1432256B222917F000D07AA5 /* UtilSampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilSampleData.swift; sourceTree = "<group>"; };
 		143225712229290000D07AA5 /* KLineSampleDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineSampleDataResponse.swift; sourceTree = "<group>"; };
 		143225732229293200D07AA5 /* KLineModel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineModel2.swift; sourceTree = "<group>"; };
+		14322577222CFAC900D07AA5 /* KLineChartCheckedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineChartCheckedView.swift; sourceTree = "<group>"; };
+		14322579222CFB1A00D07AA5 /* KLinePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLinePeriod.swift; sourceTree = "<group>"; };
+		1432257B222CFFE100D07AA5 /* KLineFullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineFullScreenViewController.swift; sourceTree = "<group>"; };
+		1432257D222D02C000D07AA5 /* KLineFullScreenCheckedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineFullScreenCheckedView.swift; sourceTree = "<group>"; };
+		1432257F222D036C00D07AA5 /* KLineFullScreenIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineFullScreenIndexView.swift; sourceTree = "<group>"; };
+		14322581222D03C100D07AA5 /* KLineFullScreenTopInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineFullScreenTopInfoView.swift; sourceTree = "<group>"; };
+		14322583222D044E00D07AA5 /* KLineFullScreenBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLineFullScreenBottomView.swift; sourceTree = "<group>"; };
 		14C10D4B64AE33C529DF81B3 /* KLineView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLineView.podspec; path = ../KLineView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1BE04555A4159A0BAE2629E1 /* Pods-KLineView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLineView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLineView_Example/Pods-KLineView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		31171CD72FC3ED1C0D2E2C72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -106,6 +120,29 @@
 			path = SampleData;
 			sourceTree = "<group>";
 		};
+		14322575222CD53400D07AA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				143225732229293200D07AA5 /* KLineModel2.swift */,
+				143225712229290000D07AA5 /* KLineSampleDataResponse.swift */,
+				1432256B222917F000D07AA5 /* UtilSampleData.swift */,
+				14322579222CFB1A00D07AA5 /* KLinePeriod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14322576222CFABC00D07AA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14322577222CFAC900D07AA5 /* KLineChartCheckedView.swift */,
+				1432257D222D02C000D07AA5 /* KLineFullScreenCheckedView.swift */,
+				1432257F222D036C00D07AA5 /* KLineFullScreenIndexView.swift */,
+				14322581222D03C100D07AA5 /* KLineFullScreenTopInfoView.swift */,
+				14322583222D044E00D07AA5 /* KLineFullScreenBottomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -130,12 +167,12 @@
 		607FACD21AFB9204008FA782 /* Example for KLineView */ = {
 			isa = PBXGroup;
 			children = (
-				143225732229293200D07AA5 /* KLineModel2.swift */,
-				143225712229290000D07AA5 /* KLineSampleDataResponse.swift */,
-				1432256B222917F000D07AA5 /* UtilSampleData.swift */,
+				14322576222CFABC00D07AA5 /* View */,
+				14322575222CD53400D07AA5 /* Model */,
 				1432255A222917E000D07AA5 /* SampleData */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1432257B222CFFE100D07AA5 /* KLineFullScreenViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -253,10 +290,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = AMT9B7XN2Z;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = AMT9B7XN2Z;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -391,11 +430,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1432257E222D02C000D07AA5 /* KLineFullScreenCheckedView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				14322580222D036C00D07AA5 /* KLineFullScreenIndexView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				143225722229290100D07AA5 /* KLineSampleDataResponse.swift in Sources */,
+				1432257C222CFFE100D07AA5 /* KLineFullScreenViewController.swift in Sources */,
+				14322578222CFAC900D07AA5 /* KLineChartCheckedView.swift in Sources */,
+				14322582222D03C100D07AA5 /* KLineFullScreenTopInfoView.swift in Sources */,
+				14322584222D044E00D07AA5 /* KLineFullScreenBottomView.swift in Sources */,
 				143225742229293200D07AA5 /* KLineModel2.swift in Sources */,
 				1432256C222917F000D07AA5 /* UtilSampleData.swift in Sources */,
+				1432257A222CFB1A00D07AA5 /* KLinePeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +587,8 @@
 			baseConfigurationReference = 951AACA6AB4CFC3248E44869 /* Pods-KLineView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = AMT9B7XN2Z;
 				INFOPLIST_FILE = KLineView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -556,6 +604,8 @@
 			baseConfigurationReference = 1BE04555A4159A0BAE2629E1 /* Pods-KLineView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = AMT9B7XN2Z;
 				INFOPLIST_FILE = KLineView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -570,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 322D7C58E2D9CCD2BEAB7211 /* Pods-KLineView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AMT9B7XN2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -592,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C587F795451998C72654F4B /* Pods-KLineView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AMT9B7XN2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
